@@ -1,6 +1,7 @@
 ---
 title: "Biggest Cities in Metro Manila, Philippines by Population"
 date: "11 Feb. 2020"
+author: G.Hirang
 output: html_document
 ---
 
