@@ -1,0 +1,35 @@
+---
+title: "Biggest Cities in Metro Manila, Philippines by Population"
+date: "11 Feb. 2020"
+output: html_document
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(leaflet)
+```
+
+
+```{r, echo=FALSE}
+leaflet() %>% 
+    addTiles() %>% 
+    setView(lng = 121.0223, lat = 14.6091, zoom = 10) %>% 
+    addCircleMarkers(lng = 121.05, lat = 14.64, color = "blue", weight = 1, opacity = 0.6) %>% 
+    addMarkers(lng = 121.05, lat = 14.64, label = "Quezon City: 2,936,116", labelOptions = labelOptions(direction = "bottom", style = list("color" = "blue", "font-family" = "serif", "font-style" = "italic", "font-size" = "13px"))) %>% 
+    addCircleMarkers(lng = 120.98, lat = 14.60, color = "red", weight = 1, opacity = 0.6) %>% 
+    addMarkers(lng = 120.98, lat = 14.60, label = "Manila: 1,780,148", labelOptions = labelOptions(direction = "bottom", style = list("color" = "blue", "font-family" = "serif", "font-style" = "italic", "font-size" = "13px"))) %>% 
+    addCircleMarkers(lng = 120.98, lat = 14.64, color = "blue", weight = 1, opacity = 0.6) %>% 
+    addMarkers(lng = 120.98, lat = 14.64, label = "Caloocan: 1,583,978", labelOptions = labelOptions(direction = "bottom", style = list("color" = "blue", "font-family" = "serif", "font-style" = "italic", "font-size" = "13px"))) %>% 
+    addCircleMarkers(lng = 121.07, lat = 14.52, color = "blue", weight = 1, opacity = 0.6) %>% 
+    addMarkers(lng = 121.07, lat = 14.52, label = "Taguig: 804,915", labelOptions = labelOptions(direction = "bottom", style = list("color" = "blue", "font-family" = "serif", "font-style" = "italic", "font-size" = "13px"))) %>% 
+    addCircleMarkers(lng = 121.08, lat = 14.56, color = "blue", weight = 1, opacity = 0.6) %>% 
+    addMarkers(lng = 121.08, lat = 14.56, label = "Pasig: 755,300", labelOptions = labelOptions(direction = "bottom", style = list("color" = "blue", "font-family" = "serif", "font-style" = "italic", "font-size" = "13px"))) %>% 
+    addCircleMarkers(lng = 120.99, lat = 14.49, color = "blue", weight = 1, opacity = 0.6) %>% 
+    addMarkers(lng = 120.99, lat = 14.49, label = "Parañaque: 664,822", labelOptions = labelOptions(direction = "bottom", style = list("color" = "blue", "font-family" = "serif", "font-style" = "italic", "font-size" = "13px"))) %>% 
+    addCircleMarkers(lng = 120.96, lat = 14.69, color = "blue", weight = 1, opacity = 0.6) %>% 
+    addMarkers(lng = 120.96, lat = 14.69, label = "Valenzuela: 620,422", labelOptions = labelOptions(direction = "bottom", style = list("color" = "blue", "font-family" = "serif", "font-style" = "italic", "font-size" = "13px"))) %>% 
+    addCircleMarkers(lng = 120.98, lat = 14.45, color = "blue", weight = 1, opacity = 0.6) %>% 
+    addMarkers(lng = 120.98, lat = 14.45, label = "Las Piñas: 588,894", labelOptions = labelOptions(direction = "bottom", style = list("color" = "blue", "font-family" = "serif", "font-style" = "italic", "font-size" = "13px"))) %>% 
+    addCircleMarkers(lng = 121.03, lat = 14.55, color = "blue", weight = 1, opacity = 0.6) %>% 
+    addMarkers(lng = 121.03, lat = 14.55, label = "Makati: 582,602", labelOptions = labelOptions(direction = "bottom", style = list("color" = "blue", "font-family" = "serif", "font-style" = "italic", "font-size" = "13px")))
+```
